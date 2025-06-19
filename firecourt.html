@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Fire Court - Aberdeen Lockdown Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.scroll-viewer {
+				height: 800vh; /* Make page much taller for slower progression */
+				position: relative;
+			}
+			
+			.image-container {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 95%;
+				max-width: 1200px;
+				height: 85vh;
+				z-index: 10;
+			}
+			
+			.scroll-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				opacity: 0;
+				transition: opacity 0.4s ease-in-out;
+				border-radius: 8px;
+				box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+			}
+			
+			.scroll-image.active {
+				opacity: 1;
+			}
+			
+			.description {
+				position: fixed;
+				bottom: 5%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+			
+			.progress-indicator {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background: rgba(0,0,0,0.7);
+				color: white;
+				padding: 10px 15px;
+				border-radius: 20px;
+				font-size: 14px;
+				z-index: 12;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">Generic</a></li>
+						<li><a href="firecourt.html" class="active">Fire Court</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div class="scroll-viewer">
+					<!-- Progress Indicator -->
+					<div class="progress-indicator">
+						<span id="current-image">1</span> / <span id="total-images">44</span>
+					</div>
+
+					<!-- Image Container -->
+					<div class="image-container">
+						<img src="images/firecourt/scroll_images/a00.jpg" alt="" class="scroll-image active" />
+						<img src="images/firecourt/scroll_images/a01.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/f_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/f_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/f_lg_frame_0002.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/f_lg_frame_0003.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/f_lg_frame_0004.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0002.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0003.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0004.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0005.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0006.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0007.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0008.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0009.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0010.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0011.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0012.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0013.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0014.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0015.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0016.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0017.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/g_lg_frame_0018.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/l_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/l_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/m_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/m_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/m_lg_frame_0002.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/m_lg_frame_0003.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/m_lg_frame_0004.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0002.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0003.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0004.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/p_lg_frame_0005.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/r_lg_frame_0000.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/r_lg_frame_0001.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/r_lg_frame_0002.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/s01.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/s02.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/t01.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/u03.jpg" alt="" class="scroll-image" />
+					</div>
+
+					<!-- Description -->
+					<div class="description">
+						<h2>The Fire Court</h2>
+						<p>During Aberdeen's 2020 lockdown, I transformed granite stones from our house extension into a circular drywall court with a central cheminea. This meditative building project became a gathering place that brought friends together around fire during a time of isolation. <strong>Scroll to see the journey from clearing to completion.</strong></p>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const images = document.querySelectorAll('.scroll-image');
+					const currentImageSpan = document.getElementById('current-image');
+					const description = document.querySelector('.description');
+					const totalImages = images.length;
+					let currentIndex = 0;
+					let previousIndex = 0;
+
+					function updateImage() {
+						const prevIndex = previousIndex;
+						previousIndex = currentIndex;
+						
+						// Add active class to new image (starts fading in)
+						images[currentIndex].classList.add('active');
+						
+						// Remove active class only from the previous image after transition starts
+						if (prevIndex !== currentIndex) {
+							setTimeout(() => {
+								images[prevIndex].classList.remove('active');
+							}, 330); // Wait 150ms for crossfade
+						}
+						
+						// Update progress indicator
+						currentImageSpan.textContent = currentIndex + 1;
+						
+						// Hide description after first image
+						if (currentIndex > 0) {
+							description.classList.add('hidden');
+						} else {
+							description.classList.remove('hidden');
+						}
+					}
+
+					function handleScroll() {
+						const scrollTop = window.pageYOffset;
+						const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+						const scrollPercent = Math.min(scrollTop / documentHeight, 1);
+						
+						// Calculate which image to show based on scroll position
+						const newIndex = Math.floor(scrollPercent * (totalImages - 1));
+						
+						if (newIndex !== currentIndex && newIndex < totalImages) {
+							previousIndex = currentIndex;
+							currentIndex = newIndex;
+							updateImage();
+						}
+					}
+
+					// Initialize
+					document.getElementById('total-images').textContent = totalImages;
+					previousIndex = 0;
+					updateImage();
+
+					// Listen for scroll events
+					window.addEventListener('scroll', handleScroll);
+					
+					// Handle wheel events for smoother scrolling
+					window.addEventListener('wheel', function(e) {
+						// Let the browser handle the actual scrolling
+						setTimeout(handleScroll, 10);
+					});
+				});
+			</script>
+
+	</body>
+</html> 
