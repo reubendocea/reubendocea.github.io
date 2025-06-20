@@ -24,6 +24,14 @@
 
 			@include breakpoint('<=small') {
 				font-size: 1em;
+
+				/* Profile picture adjustments for small screens */
+				img {
+					max-width: 100%;
+					height: auto;
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 
