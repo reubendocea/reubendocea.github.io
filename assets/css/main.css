@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: linear-gradient(to bottom, #fbbf24, #ffffff);
+		background: linear-gradient(to bottom, #fbbf24, #ffffff 85%);
 		background-attachment: fixed;
 		min-height: 100vh;
 	}
@@ -3241,7 +3241,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: rgba(251, 191, 36, 0.15);
+			background: linear-gradient(to bottom, #ffffff, #FDDF92);
 		}
 
 		.wrapper.style1 {
@@ -3249,7 +3249,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: rgba(245, 158, 11, 0.15);
+			background: linear-gradient(to bottom, #ffffff, #FDDF92);
 		}
 
 		.wrapper.style2 {
