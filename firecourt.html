@@ -146,6 +146,16 @@
 				opacity: 0;
 				pointer-events: none;
 			}
+
+			@media (max-width: 768px) {
+				.description,
+				.description.right,
+				.description.final {
+					width: 90%;
+					max-width: 90%;
+					box-sizing: border-box; /* Include padding in the width */
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
