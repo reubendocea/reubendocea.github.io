@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kemet Cat - 3D Printed Statue</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.scroll-viewer {
+				height: 400vh; /* Make page much taller for slower progression */
+				position: relative;
+			}
+			
+			.image-container {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 95%;
+				max-width: 1200px;
+				height: 85vh;
+				z-index: 10;
+			}
+			
+			.scroll-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				opacity: 0;
+				transition: opacity 0.4s ease-in-out;
+				border-radius: 8px;
+				box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+			}
+			
+			.scroll-image.active {
+				opacity: 1;
+			}
+			
+			.description {
+				position: fixed;
+				bottom: 5%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description h2 {
+				color: #FDDF92; /* Softer yellow from theme gradient */
+			}
+			
+			.description p a {
+				color: #FDDF92;
+				text-decoration: none;
+			}
+			
+			.description.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+			
+			.highlight-yellow {
+				color: #FBBF24; /* Warm yellow from theme gradient */
+			}
+			
+			.progress-indicator {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background: rgba(0,0,0,0.7);
+				color: white;
+				padding: 10px 15px;
+				border-radius: 20px;
+				font-size: 14px;
+				z-index: 12;
+			}
+			
+			.description.right {
+				position: fixed;
+				bottom: 5%;
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description.right h2 {
+				color: #FDDF92;
+			}
+			
+			.description.right.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+			
+			.description.right p a {
+				color: #FDDF92;
+				text-decoration: none;
+			}
+			
+			.description.final {
+				position: fixed;
+				bottom: 5%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description.final h2 {
+				color: #FDDF92;
+			}
+			
+			.description.final.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="firecourt.html">Fire Court</a></li>
+						<li><a href="kemet-cat.html" class="active">Kemet Cat</a></li>
+						<li><a href="cycling.html">Cycling</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div class="scroll-viewer">
+					<!-- Progress Indicator -->
+					<div class="progress-indicator">
+						<span id="current-image">1</span> / <span id="total-images">8</span>
+					</div>
+
+					<!-- Image Container -->
+					<div class="image-container">
+						<img src="images/kemet-cat/01.png" alt="" class="scroll-image active" />
+						<img src="images/kemet-cat/02.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/03.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/04.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/05.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/06.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/07.png" alt="" class="scroll-image" />
+						<img src="images/kemet-cat/01.png" alt="" class="scroll-image" />
+					<!-- Description -->
+					<div class="description">
+						<h2>Statue of Bastet</h2>
+						<p>I modelled, using Blender and Meshmixer (starting from <a href="https://sketchfab.com/3d-models/egyptian-cat-statue-02b0456362f9442da46d39fb34b3ee5b">here</a>), 3D printed and painted, a statue of Bastet, the Egyptian goddess of cats, as a trophy for a work board game evening which I organise.</p>
+						<p><strong class="highlight-yellow">Scroll for more!</strong></p>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const images = document.querySelectorAll('.scroll-image');
+					const currentImageSpan = document.getElementById('current-image');
+					const description = document.querySelector('.description');
+					const totalImages = images.length;
+					let currentIndex = 0;
+					let previousIndex = 0;
+
+					function updateImage() {
+						const prevIndex = previousIndex;
+						previousIndex = currentIndex;
+						
+						// Add active class to new image (starts fading in)
+						images[currentIndex].classList.add('active');
+						
+						// Remove active class only from the previous image after transition starts
+						if (prevIndex !== currentIndex) {
+							setTimeout(() => {
+								images[prevIndex].classList.remove('active');
+							}, 330); // Wait 150ms for crossfade
+						}
+						
+						// Update progress indicator
+						currentImageSpan.textContent = currentIndex + 1;
+						
+						// Hide/show descriptions based on current image index
+						if (currentIndex === 0) {
+							description.classList.remove('hidden');
+						} else {
+							description.classList.add('hidden');
+						}
+					}
+
+					function handleScroll() {
+						const scrollTop = window.pageYOffset;
+						const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+						const scrollPercent = Math.min(scrollTop / documentHeight, 1);
+						
+						// Calculate which image to show based on scroll position
+						const newIndex = Math.floor(scrollPercent * (totalImages - 1));
+						
+						if (newIndex !== currentIndex && newIndex < totalImages) {
+							previousIndex = currentIndex;
+							currentIndex = newIndex;
+							updateImage();
+						}
+					}
+
+					// Initialize
+					document.getElementById('total-images').textContent = totalImages;
+					previousIndex = 0;
+					updateImage();
+
+					// Listen for scroll events
+					window.addEventListener('scroll', handleScroll);
+					
+					// Handle wheel events for smoother scrolling
+					window.addEventListener('wheel', function(e) {
+						// Let the browser handle the actual scrolling
+						setTimeout(handleScroll, 10);
+					});
+				});
+			</script>
+
+	</body>
+</html> 

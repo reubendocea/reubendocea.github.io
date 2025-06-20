@@ -60,9 +60,17 @@
 				transition: opacity 0.5s ease-in-out;
 			}
 			
+			.description h2 {
+				color: #FDDF92; /* Softer yellow from theme gradient */
+			}
+			
 			.description.hidden {
 				opacity: 0;
 				pointer-events: none;
+			}
+			
+			.highlight-yellow {
+				color: #FBBF24; /* Warm yellow from theme gradient */
 			}
 			
 			.progress-indicator {
@@ -76,19 +84,73 @@
 				font-size: 14px;
 				z-index: 12;
 			}
+			
+			.description.right {
+				position: fixed;
+				bottom: 5%;
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description.right h2 {
+				color: #FDDF92;
+			}
+			
+			.description.right.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
+			
+			.description.right p a {
+				color: #FDDF92;
+				text-decoration: none;
+			}
+			
+			.description.final {
+				position: fixed;
+				bottom: 5%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0,0,0,0.9);
+				color: white;
+				padding: 20px 30px;
+				border-radius: 8px;
+				max-width: 800px;
+				text-align: center;
+				z-index: 11;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			.description.final h2 {
+				color: #FDDF92;
+			}
+			
+			.description.final.hidden {
+				opacity: 0;
+				pointer-events: none;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title"></a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">Generic</a></li>
 						<li><a href="firecourt.html" class="active">Fire Court</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						<li><a href="kemet-cat.html">Kemet Cat</a></li>
+						<li><a href="cycling.html">Cycling</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -145,9 +207,9 @@
 						<img src="images/firecourt/scroll_images/r_lg_frame_0000.jpg" alt="" class="scroll-image" />
 						<img src="images/firecourt/scroll_images/r_lg_frame_0001.jpg" alt="" class="scroll-image" />
 						<img src="images/firecourt/scroll_images/r_lg_frame_0002.jpg" alt="" class="scroll-image" />
-						<img src="images/firecourt/scroll_images/s01.jpg" alt="" class="scroll-image" />
 						<img src="images/firecourt/scroll_images/s02.jpg" alt="" class="scroll-image" />
-						<img src="images/firecourt/scroll_images/t01.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/t00_lg.jpg" alt="" class="scroll-image" />
+						<img src="images/firecourt/scroll_images/t01_lg.jpg" alt="" class="scroll-image" />
 						<img src="images/firecourt/scroll_images/u03.jpg" alt="" class="scroll-image" />
 					</div>
 
@@ -155,9 +217,18 @@
 					<div class="description">
 						<h2>The Fire Court</h2>
 						<p>During Aberdeen's 2021 lockdown, I transformed granite stones from our house extension into a circular drywall court with a central cheminea. This meditative building project became a gathering place that brought friends together around fire during a time of isolation.</p>
-						<p><strong>Scroll to see the journey from clearing to completion.</strong></p>
+						<p><strong class="highlight-yellow">Scroll to see the journey from clearing to completion.</strong></p>
 					</div>
-				</div>
+					
+					<div class="description right hidden">
+						<h2>Image Alignment</h2>
+						<p>I used <a href="https://github.com/cvg/LightGlue">LightGlue</a> to match and warp to align the images, so that groups of images taken from different perspectives fit more neatly together.</p>
+					</div>
+					
+					<div class="description final hidden">
+						<h2>Pizza in the Fire Court</h2>
+					</div>
+						</div>
 			</div>
 
 		<!-- Footer -->
@@ -183,6 +254,8 @@
 					const images = document.querySelectorAll('.scroll-image');
 					const currentImageSpan = document.getElementById('current-image');
 					const description = document.querySelector('.description');
+					const rightDescription = document.querySelector('.description.right');
+					const finalDescription = document.querySelector('.description.final');
 					const totalImages = images.length;
 					let currentIndex = 0;
 					let previousIndex = 0;
@@ -204,11 +277,23 @@
 						// Update progress indicator
 						currentImageSpan.textContent = currentIndex + 1;
 						
-						// Hide description after first image
-						if (currentIndex > 0) {
-							description.classList.add('hidden');
-						} else {
+						// Hide/show descriptions based on current image index
+						if (currentIndex === 0) {
 							description.classList.remove('hidden');
+						} else {
+							description.classList.add('hidden');
+						}
+
+						if (currentIndex >= 2 && currentIndex <= 7) {
+							rightDescription.classList.remove('hidden');
+						} else {
+							rightDescription.classList.add('hidden');
+						}
+
+						if (currentIndex === totalImages - 1) {
+							finalDescription.classList.remove('hidden');
+						} else {
+							finalDescription.classList.add('hidden');
 						}
 					}
 
