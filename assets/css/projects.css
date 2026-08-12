@@ -1,0 +1,236 @@
+.project-header nav a.active { color: var(--purple); }
+
+.project-main {
+	width: min(calc(100% - 64px), var(--page));
+	margin: 0 auto;
+}
+
+.project-hero {
+	display: grid;
+	grid-template-columns: 17.5% 1fr;
+	gap: 2.5%;
+	padding: 7rem 0 5rem;
+}
+
+.project-index {
+	padding-top: .8rem;
+	color: var(--purple);
+	font-size: .75rem;
+	font-weight: 700;
+	letter-spacing: .1em;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.project-hero h1 {
+	margin: 0 0 .35rem;
+	font-size: clamp(3.8rem, 8vw, 7.5rem);
+	font-weight: 300;
+	letter-spacing: -.065em;
+	line-height: .95;
+}
+
+.project-hero h1 span { color: var(--purple); }
+
+.project-lede {
+	max-width: 720px;
+	margin: 1.6rem 0 0;
+	color: var(--muted);
+	font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+	font-style: italic;
+	line-height: 1.7;
+}
+
+.route-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	padding-bottom: 7rem;
+}
+
+.route-card {
+	border: 1px solid var(--line);
+	background: var(--paper);
+}
+
+.route-card-copy { padding: 1.75rem; }
+.route-card .entry-date { margin-bottom: .6rem; text-align: left; }
+.route-card h2 { margin-bottom: .3rem; font-size: 1.45rem; }
+.route-card p { margin-bottom: 0; color: var(--muted); }
+
+.route-card img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid var(--line);
+}
+
+.project-footer {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	align-items: center;
+	padding: 2.25rem max(32px, calc((100vw - var(--page)) / 2));
+	background: #17131e;
+	color: white;
+}
+
+.project-footer p { margin: 0; color: #aaa5af; font-size: .75rem; }
+.project-footer a { color: white; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.project-footer-links { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+
+/* Scroll-driven project stories */
+.story-page { background: var(--soft); }
+
+.scroll-story {
+	position: relative;
+	height: calc(100vh - 78px);
+	min-height: 520px;
+}
+
+.story-stage {
+	position: relative;
+	height: 100%;
+	min-height: 520px;
+	overflow: hidden;
+	background: var(--soft);
+}
+
+.story-images {
+	position: absolute;
+	inset: clamp(24px, 4vw, 60px) max(24px, calc((100vw - var(--page)) / 2));
+}
+
+.story-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--line);
+	background: var(--paper);
+	box-shadow: 0 20px 70px rgba(35, 27, 46, .12);
+	object-fit: contain;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity .16s ease-in-out;
+}
+
+.story-image.outgoing {
+	z-index: 1;
+	opacity: 1;
+	transition: none;
+}
+
+.story-image.active {
+	z-index: 2;
+	opacity: 1;
+}
+
+.story-progress {
+	position: absolute;
+	top: clamp(36px, 5vw, 72px);
+	right: max(36px, calc((100vw - var(--page)) / 2 + 12px));
+	z-index: 4;
+	display: flex;
+	gap: .55rem;
+	align-items: center;
+	padding: .5rem .75rem;
+	background: var(--purple);
+	color: white;
+	font-size: .7rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+}
+
+.story-progress::before { content: "Frame"; font-weight: 400; opacity: .72; text-transform: uppercase; }
+
+.story-progress button {
+	display: grid;
+	place-items: center;
+	width: 1.65rem;
+	height: 1.65rem;
+	margin: -.2rem 0;
+	padding: 0;
+	border: 1px solid rgba(255, 255, 255, .42);
+	background: transparent;
+	color: white;
+	font: inherit;
+	cursor: pointer;
+}
+
+.story-progress button:hover:not(:disabled),
+.story-progress button:focus-visible { background: white; color: var(--purple-dark); }
+.story-progress button:disabled { cursor: default; opacity: .35; }
+
+.story-panel {
+	position: absolute;
+	left: max(32px, calc((100vw - var(--page)) / 2 + 24px));
+	bottom: clamp(28px, 5vw, 70px);
+	z-index: 5;
+	width: min(580px, calc(100% - 64px));
+	padding: 1.5rem 1.7rem;
+	border-left: 8px solid var(--purple);
+	background: rgba(23, 19, 30, .94);
+	color: white;
+	opacity: 0;
+	transform: translateY(12px);
+	pointer-events: none;
+	transition: opacity .28s ease, transform .28s ease;
+}
+
+.story-panel.active { opacity: 1; transform: translateY(0); }
+.story-panel .entry-date { margin-bottom: .4rem; text-align: left; }
+.story-panel h1, .story-panel h2 { margin-bottom: .55rem; color: white; font-size: clamp(1.35rem, 2.5vw, 2rem); font-weight: 400; }
+.story-panel p { margin-bottom: .65rem; color: #ddd9e3; font-size: .9rem; line-height: 1.6; }
+.story-panel p:last-child { margin-bottom: 0; }
+.story-panel a { color: #d6c5f3; }
+.scroll-cue { color: #d6c5f3 !important; font-size: .73rem !important; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+
+.story-end {
+	position: relative;
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 2rem;
+	align-items: center;
+	padding: 4rem max(32px, calc((100vw - var(--page)) / 2));
+	background: var(--paper);
+}
+
+.story-end h2 { margin: 0; color: var(--purple); font-size: clamp(2rem, 5vw, 4.5rem); font-weight: 300; letter-spacing: -.04em; }
+
+.redirect-page {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+	background: var(--purple-pale);
+	text-align: center;
+}
+
+.redirect-card { max-width: 620px; padding: 4rem; border-top: 12px solid var(--purple); background: white; box-shadow: 0 24px 80px rgba(49, 31, 80, .14); }
+.redirect-card h1 { margin-bottom: 1rem; font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 300; letter-spacing: -.05em; }
+.redirect-card h1 span { color: var(--purple); }
+
+@media (max-width: 900px) {
+	.project-main { width: min(calc(100% - 48px), var(--page)); }
+	.project-hero { grid-template-columns: 22% 1fr; gap: 4%; padding-top: 5rem; }
+	.story-images { right: 24px; left: 24px; }
+}
+
+@media (max-width: 620px) {
+	.project-main { width: min(calc(100% - 36px), var(--page)); }
+	.project-hero { display: block; padding: 4rem 0 3rem; }
+	.project-index { margin-bottom: .8rem; text-align: left; }
+	.project-hero h1 span { display: block; }
+	.route-grid { grid-template-columns: 1fr; padding-bottom: 4rem; }
+	.project-footer { align-items: flex-start; flex-direction: column-reverse; padding-right: 18px; padding-left: 18px; }
+	.scroll-story, .story-stage { min-height: 560px; }
+	.story-images { inset: 18px; }
+	.story-progress { top: 26px; right: 26px; }
+	.story-panel { left: 18px; bottom: 18px; width: calc(100% - 36px); padding: 1.1rem 1.2rem; border-left-width: 6px; }
+	.story-panel p { font-size: .8rem; }
+	.story-end { grid-template-columns: 1fr; padding-right: 18px; padding-left: 18px; }
+	.story-end .button { width: 100%; }
+	.redirect-card { padding: 2.5rem 1.5rem; }
+}

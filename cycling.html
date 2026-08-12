@@ -1,79 +1,58 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Cycling - Trips with my bike and friends</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Ensure header is above any content */
-			#header {
-				z-index: 15 !important;
-				position: relative;
-			}
-		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Cycling trips through Czechia, Austria, Germany and Switzerland with Reuben Docea.">
+		<meta name="theme-color" content="#8054cc">
+		<title>Cycling Trips — Reuben Docea</title>
+		<link rel="stylesheet" href="assets/css/cv.css">
+		<link rel="stylesheet" href="assets/css/projects.css">
 	</head>
-	<body class="is-preload">
+	<body>
+		<header class="site-header project-header">
+			<a class="wordmark" href="index.html" aria-label="Reuben Docea, home">RD</a>
+			<nav aria-label="Project navigation">
+				<a href="index.html#work">Portfolio</a>
+				<a href="firecourt.html">Fire Court</a>
+				<a href="kemet-cat.html">Bastet</a>
+				<a class="active" href="cycling.html" aria-current="page">Cycling</a>
+			</nav>
+			<a class="header-contact" href="https://www.linkedin.com/in/reuben-docea-5268b2a1/">LinkedIn ↗</a>
+		</header>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title"></a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="firecourt.html">Fire Court</a></li>
-						<li><a href="kemet-cat.html">Kemet Cat</a></li>
-						<li><a href="cycling.html" class="active">Cycling</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1>Cycling Trips</h1>
-							<p>I love cycling and exploring new places - especially together with friends. In recent years, I've cycled through Czechia, Austria, Switzerland, and soon the Black Forest in Germany.</p>
-							<div class="row gtr-uniform">
-								<div class="col-6 col-12-medium offset-1">
-									<h3>🇨🇿🇦🇹🇩🇪 Prague to Munich - Heatmap and Route (2023) 🚴‍♂️</h3>
-									<span class="image fit"><img src="images/cycling/cycle_map_czechia-austria.jpg" alt="Cycling heatmap Czechia and Austria" /></span>
-								</div>
-								<div class="col-6 col-12-medium">
-									<h3>🇨🇭 Bern to Zurich - Heatmap and Route (2024) 🚴‍♂️</h3>
-									<span class="image fit"><img src="images/cycling/cycle_map_switzerland.jpg" alt="Cycling heatmap Switzerland" /></span>
-								</div>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Reuben Docea. All rights reserved. Images are personal property and not for use by others.</li><li>Based on a design by <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+		<main class="project-main">
+			<section class="project-hero">
+				<p class="project-index">03 / Explore</p>
+				<div>
+					<h1>Cycling <span>Trips</span></h1>
+					<p class="project-lede">I love cycling and exploring new places, especially together with friends. Recent trips have taken us through Czechia, Austria, Germany and Switzerland, with the Black Forest next.</p>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section class="route-grid" aria-label="Cycling routes">
+				<article class="route-card">
+					<div class="route-card-copy">
+						<p class="entry-date">2023 · Czechia / Austria / Germany</p>
+						<h2>Prague to Munich</h2>
+						<p>Our route and ride heatmap across three countries.</p>
+					</div>
+					<img src="images/cycling/cycle_map_czechia-austria.jpg" alt="Cycling route heatmap from Prague to Munich" width="1005" height="1011">
+				</article>
+				<article class="route-card">
+					<div class="route-card-copy">
+						<p class="entry-date">2024 · Switzerland</p>
+						<h2>Bern to Zürich</h2>
+						<p>Our route and ride heatmap across Switzerland.</p>
+					</div>
+					<img src="images/cycling/cycle_map_switzerland.jpg" alt="Cycling route heatmap from Bern to Zürich" width="1008" height="1020">
+				</article>
+			</section>
+		</main>
 
+		<footer class="project-footer">
+			<p>© 2026 Reuben Docea · Images are personal property.</p>
+			<div class="project-footer-links"><a href="kemet-cat.html">← Previous project</a><a href="index.html#work">All work ↗</a></div>
+		</footer>
 	</body>
 </html>

@@ -1,179 +1,184 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Reuben Docea's Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Reuben Docea — Head of Technology working across computer vision, robotics and applied AI.">
+		<meta name="theme-color" content="#8054cc">
+		<title>Reuben Docea — Computer Vision, Robotics &amp; AI</title>
+		<link rel="stylesheet" href="assets/css/cv.css">
 	</head>
-	<body class="is-preload">
+	<body>
+		<header class="site-header">
+			<a class="wordmark" href="#top" aria-label="Reuben Docea, home">RD</a>
+			<nav aria-label="Main navigation">
+				<a href="#experience">Experience</a>
+				<a href="#work">Selected work</a>
+				<a href="#skills">Skills</a>
+				<a href="#interests">Interests</a>
+			</nav>
+			<a class="header-contact" href="https://www.linkedin.com/in/reuben-docea-5268b2a1/">LinkedIn ↗</a>
+		</header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Reuben Docea</a></li>
-							<li><a href="#one">Curriculum Vitae</a></li>
-							<li><a href="#two">Interests</a></li>
-							<li><a href="#three">Get in touch</a></li>
+		<main id="top">
+			<section class="hero" aria-labelledby="page-title">
+				<div class="hero-copy">
+					<p class="eyebrow">Head of Technology · Edinburgh, Scotland</p>
+					<h1 id="page-title">Reuben <span>Docea</span></h1>
+					<p class="hero-title">Computer vision, robotics &amp; applied AI</p>
+					<p class="summary">Throughout my career, I have pursued work that combines promising technology with the possibility of tangible impact. This has led me from founding a university society to 3D-print prosthetic devices for children in Glasgow, through agricultural robotics, to six years of research at the interface of computer vision and minimally invasive surgery. I now lead technology at Applied Computer Vision, developing and deploying computer vision systems for industrial settings. The role has broadened my work beyond engineering into client conversations and practical delivery. I am most interested in work that combines technical depth with a clear purpose, particularly where computer vision, robotics and AI can improve how people understand and act on the physical world.</p>
+					<div class="hero-actions">
+						<a class="button primary" href="ReubenDoceaCV.pdf">View full CV <span aria-hidden="true">↗</span></a>
+						<a class="button secondary" href="https://www.linkedin.com/in/reuben-docea-5268b2a1/">LinkedIn profile</a>
+					</div>
+				</div>
+				<figure class="portrait-wrap">
+					<div class="portrait-rule" aria-hidden="true"></div>
+					<img class="portrait" src="images/reuben-docea-cv.jpg" alt="Portrait of Reuben Docea" width="640" height="640">
+					<figcaption>Technical depth,<br>clear purpose.</figcaption>
+				</figure>
+			</section>
+
+			<section class="cv-section" id="experience" aria-labelledby="experience-title">
+				<div class="section-heading">
+					<span aria-hidden="true"></span>
+					<h2 id="experience-title">Employment Record</h2>
+				</div>
+
+				<article class="entry featured-entry">
+					<div class="entry-date">2025—Present</div>
+					<div class="entry-body">
+						<div class="entry-heading">
+							<div>
+								<h3>Head of Technology</h3>
+								<p><a href="https://www.appliedcomputervision.com/">Applied Computer Vision</a> · Edinburgh, Scotland</p>
+							</div>
+							<span class="current">Current</span>
+						</div>
+						<p>Early technical hire leading applied computer vision and ML engineering alongside client-facing work. I develop and deploy industrial vision systems, establish reusable engineering and delivery practices, and represent ACV externally, including at Campden BRI.</p>
+					</div>
+				</article>
+
+				<article class="entry">
+					<div class="entry-date">2020—2026</div>
+					<div class="entry-body">
+						<div class="entry-heading">
+							<div>
+								<h3>PhD <span class="subtle">(submitted)</span></h3>
+								<p><a href="https://www.nct-dresden.de/en/homepage?set_language=en">National Center for Tumor Diseases</a> · Dresden, Germany</p>
+							</div>
+						</div>
+						<p>AI-driven computer vision methods for surgical navigation. Thesis: <em>Learning to Estimate Soft Tissue Deformation from Laparoscopic Surgery Videos in a Surgical Navigation Context.</em></p>
+						<ul class="detail-list">
+							<li><strong><a href="https://imld.de/en/research/research-projects/arailis/">ARAILIS:</a></strong> Led ROS-based integration of a navigation system for minimally invasive liver surgery, focusing on SLAM. The work produced six publications, a ROSCon 2022 keynote and a <a href="https://gitlab.com/arailis-public/laparoscopic-liver-navigation">public code repository</a>.</li>
+							<li><strong>Surgical data collection:</strong> Initiated and led an international in-vivo dataset project for 4D reconstruction evaluation, synchronising a da Vinci Xi endoscope, structured-light camera and optical tracking in ROS2.</li>
+							<li><strong><a href="https://cloudskin.eu/">CloudSkin:</a></strong> Built intelligent orchestration infrastructure and a Kubernetes + Docker cluster simulating a multi-operating-room environment.</li>
+							<li><strong>NavigationBox &amp; teaching:</strong> Co-developed an AR surgical navigation solution and supervised multiple student theses and group projects.</li>
 						</ul>
-					</nav>
+						<p class="inline-links"><a href="https://scholar.google.com/citations?user=g_DQoBsAAAAJ">Google Scholar ↗</a><a href="https://www.youtube.com/watch?v=9Mwto7kC4No">System demonstration ↗</a></p>
+					</div>
+				</article>
+
+				<article class="entry">
+					<div class="entry-date">2019—2020</div>
+					<div class="entry-body">
+						<div class="entry-heading">
+							<div>
+								<h3>Robotics Engineer</h3>
+								<p><a href="https://www.smallrobotco.com/">Small Robot Company</a> · Salisbury, England</p>
+							</div>
+						</div>
+						<p>Engineered and integrated vision systems for agricultural robots. Developed C++ and ROS applications for imaging hardware, including stereo calibration and matching; led camera and lens specification; and ran hyperspectral-imaging experiments for automated weeding.</p>
+					</div>
+				</article>
+			</section>
+
+			<section class="cv-section" aria-labelledby="education-title">
+				<div class="section-heading">
+					<span aria-hidden="true"></span>
+					<h2 id="education-title">Education &amp; Earlier Impact</h2>
+				</div>
+				<div class="two-column-entries">
+					<article class="compact-entry">
+						<p class="entry-date">2014—2019</p>
+						<h3>MEng Biomedical Engineering</h3>
+						<p class="meta"><a href="https://www.gla.ac.uk/">University of Glasgow</a> · First Class</p>
+					</article>
+					<article class="compact-entry">
+						<p class="entry-date">2018—2019</p>
+						<h3>Master’s Project</h3>
+						<p class="meta">Chalmers University of Technology · Gothenburg</p>
+						<p>Signal processing, statistics and machine learning for real-time control of motorised prostheses.</p>
+					</article>
+					<article class="compact-entry wide">
+						<p class="entry-date">2017—2018</p>
+						<h3>Founder &amp; President, <a href="https://www.facebook.com/handprints.enable/">Handprints — e-NABLE Scotland</a></h3>
+						<p class="meta">University of Glasgow · Glasgow, Scotland</p>
+						<p>Established and led a student society that designed and 3D-printed prosthetic devices for local individuals and ran educational initiatives in schools. Secured two grants, earned a national award nomination and designed a novel cycling prosthesis.</p>
+					</article>
 				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<div style="text-align: center; margin-bottom: 3rem; margin-top: -2rem;">
-								<img src="images/profipic1_resized.jpg" alt="Reuben Docea" style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover; box-shadow: 0 6px 12px rgba(0,0,0,0.15); image-rendering: smooth; filter: blur(0.3px);" />
-							</div>
-							<h1>Reuben Docea</h1>
-							<p> Enjoyer of all things 'life' | Eager 'maker' | Enthusiastic and willing team player
-								<br>
-								<br>
-								Seeking to join a new initiative with a clear and compelling vision in this period of transformation.
-							</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Curriculum Vitae Highlights</h2>
-							<p>Throughout my adult life, I have pursued promising avenues for positive societal impact and personal growth, with success in diverse contexts: from establishing a university society to 3D-print prosthetic devices for children in Glasgow, to working on low-footprint robotic agriculture, and researching at the interface of computer vision and minimally invasive surgery. This ability to identify impactful future trends was highlighted at a recent lab retreat, where my presentation on the significance of broader AI developments for my work was recognised as the "most inspiring talk". As my time at the German Cancer Research Center concludes, I am eagerly seeking to join a new initiative with a clear and compelling vision in this period of transformation. For the right role and project, I offer hard work, enthusiasm, team spirit, initiative, and dedication.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-flask"></span>
-									<h3><a href="https://www.nct-dresden.de/en/homepage?set_language=en">AI-driven Surgical Navigation</a></h3>
-									<p>Developed and integrated AI-driven computer vision methods for surgical navigation systems (publications - <a href="https://scholar.google.com/citations?user=g_DQoBsAAAAJ">Google Scholar</a>).</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-robot"></span>
-									<h3><a href="https://imld.de/en/research/research-projects/arailis/">ROS-based Surgical Navigation Integration</a></h3>
-									<p>Led the ROS-based integration of a navigation system for minimally invasive liver surgery, with a focus on SLAM (<a href="https://gitlab.com/arailis-public/laparoscopic-liver-navigation">public code repository</a>). See this <a href="https://www.youtube.com/watch?v=9Mwto7kC4No">video demonstration</a>.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-database"></span>
-									<h3>Surgical Data Collection & 4D Reconstruction</h3>
-									<p>Initiated and led a project, collaborating with surgeons in Dresden and academics from <a href="https://www.cuhk.edu.hk/">CUHK (Hong Kong)</a>, for in-vivo surgical data collection for 4D reconstruction evaluation.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cloud"></span>
-									<h3><a href="https://cloudskin.eu/">Cloud-based AI Surgery Platform</a></h3>
-									<p>Developed intelligent orchestration infrastructure for AI surgery methods, utilising Kubernetes and Docker.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-eye"></span>
-									<h3><a href="https://www.smallrobotco.com/">Advanced Robotics Vision Systems</a></h3>
-									<p>Engineered and integrated advanced vision systems to expand robot capabilities in robotic agriculture.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-hands-helping"></span>
-									<h3><a href="https://www.facebook.com/handprints.enable/">3D-Printed Prosthetics & Community</a></h3>
-									<p>Founded and led 'Handprints - e-NABLE Scotland' in 2017, designing and 3D-printing prosthetic devices for local individuals. It still receives <a href="https://www.linkedin.com/posts/berndporr_all-set-for-the-open-day-yesterday-before-activity-7341781124026712065-Pg1l">enthusiasm from academics and students alike</a>.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="ReubenDoceaCV_June2025.pdf" class="button primary icon solid fa-download">View Full CV</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style2 spotlights">
-						<section>
-							<a href="firecourt.html" class="image"><img src="images/firecourt_thumb.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>The Fire Court</h2>
-									<p>During Aberdeen's 2021 lockdown, I transformed granite stones from our house extension into a circular drywall court with a central cheminea for friends to gather around.</p>
-									<ul class="actions">
-										<li><a href="firecourt.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="kemet-cat.html" class="image"><img src="images/kemet-cat_thumb.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Statue of Bastet</h2>
-									<p>I modelled, using Blender and Meshmixer (starting from <a href="https://sketchfab.com/3d-models/egyptian-cat-statue-02b0456362f9442da46d39fb34b3ee5b">here</a>), 3D printed and painted, a statue of Bastet, the Egyptian goddess of cats, as a trophy for a work board game evening which I organise.</p>
-									<ul class="actions">
-										<li><a href="kemet-cat.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="cycling.html" class="image"><img src="images/cycle_thumb.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Cycling Trips</h2>
-									<p>I love cycling and exploring new places. In recent years, I've cycled through Czechia, Austria, Switzerland, and soon the Black Forest in Germany.</p>
-									<ul class="actions">
-										<li><a href="cycling.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Feel free to connect with me through my social media channels. I'm always happy to hear from you!</p>
-							<div class="split style1">
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://x.com/docea_reuben" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.linkedin.com/in/reuben-docea-5268b2a1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://github.com/reubendocea" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://instagram.com/reubend95" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Reuben Docea. All rights reserved. Images are personal property and not for use by others.</li><li>Based on a design by <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+			<section class="cv-section" id="work" aria-labelledby="work-title">
+				<div class="section-heading">
+					<span aria-hidden="true"></span>
+					<h2 id="work-title">Selected Personal Work</h2>
 				</div>
-			</footer>
+				<p class="section-intro">Making things is the thread that runs through my technical work and the time outside it.</p>
+				<div class="project-grid">
+					<a class="project-card" href="firecourt.html">
+						<img src="images/firecourt_thumb.jpg" alt="Stone fire court built by Reuben" loading="lazy">
+						<div><p class="project-number">01 / Build</p><h3>The Fire Court</h3><p>An outdoor circular court built by hand from reclaimed granite.</p><span>View project ↗</span></div>
+					</a>
+					<a class="project-card" href="kemet-cat.html">
+						<img src="images/kemet-cat_thumb.jpg" alt="3D-printed and painted statue of Bastet" loading="lazy">
+						<div><p class="project-number">02 / Make</p><h3>Statue of Bastet</h3><p>A modelled, 3D-printed and hand-painted board-game trophy.</p><span>View project ↗</span></div>
+					</a>
+					<a class="project-card" href="cycling.html">
+						<img src="images/cycle_thumb.jpg" alt="Bicycle overlooking a mountain landscape" loading="lazy">
+						<div><p class="project-number">03 / Explore</p><h3>Cycling Trips</h3><p>Journeys through Austria, Czechia, Switzerland and beyond.</p><span>View trips ↗</span></div>
+					</a>
+				</div>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section class="cv-section skills-section" id="skills" aria-labelledby="skills-title">
+				<div class="section-heading light">
+					<span aria-hidden="true"></span>
+					<h2 id="skills-title">Technical Skills</h2>
+				</div>
+				<div class="skills-grid">
+					<div><h3>Languages</h3><p>C++ · MATLAB · Python</p></div>
+					<div><h3>Computer Vision &amp; ML</h3><p>Detection · Segmentation · Tracking · SLAM · Stereo &amp; hand-eye calibration · Edge deployment</p></div>
+					<div><h3>Frameworks</h3><p>AWS · CVAT · Docker · Git/GitHub · Kubernetes · Linux · ROS1/ROS2</p></div>
+					<div><h3>Software</h3><p>SolidWorks · Meshmixer · LaTeX</p></div>
+				</div>
+			</section>
 
+			<section class="cv-section final-section" id="interests" aria-labelledby="interests-title">
+				<div class="section-heading">
+					<span aria-hidden="true"></span>
+					<h2 id="interests-title">Interests — some of many</h2>
+				</div>
+				<div class="interests-grid">
+					<div><p class="entry-date">Cycling</p><p>Trips with friends through Austria, Czechia and Switzerland, with the Black Forest next.</p></div>
+					<div><p class="entry-date">Board games</p><p>I organise a work board-game evening featuring Cyclades, Inis and Kemet.</p></div>
+					<div><p class="entry-date">Creative pursuits</p><p>3D modelling and printing, building with stone, and making a BattleLore-inspired board-game app with AI.</p></div>
+				</div>
+				<div class="languages"><strong>Languages</strong><span>English — Native</span><span>Romanian — Native</span><span>German — B2</span></div>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				<p class="footer-kicker">Interested in useful technology?</p>
+				<h2>Let’s talk.</h2>
+			</div>
+			<div class="footer-links">
+				<a href="https://www.linkedin.com/in/reuben-docea-5268b2a1/">LinkedIn ↗</a>
+				<a href="https://github.com/reubendocea">GitHub ↗</a>
+				<a href="https://scholar.google.com/citations?user=g_DQoBsAAAAJ">Scholar ↗</a>
+			</div>
+			<p class="copyright">© 2026 Reuben Docea · Edinburgh, Scotland</p>
+		</footer>
 	</body>
 </html>
