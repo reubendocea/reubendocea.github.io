@@ -178,7 +178,7 @@
 	transition: opacity .28s ease, transform .28s ease;
 }
 
-.story-panel.active { opacity: 1; transform: translateY(0); }
+.story-panel.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .story-panel .entry-date { margin-bottom: .4rem; text-align: left; }
 .story-panel h1, .story-panel h2 { margin-bottom: .55rem; color: white; font-size: clamp(1.35rem, 2.5vw, 2rem); font-weight: 400; }
 .story-panel p { margin-bottom: .65rem; color: #ddd9e3; font-size: .9rem; line-height: 1.6; }
